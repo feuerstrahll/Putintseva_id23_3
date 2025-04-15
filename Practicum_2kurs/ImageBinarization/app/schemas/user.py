@@ -13,7 +13,6 @@ class UserLogin(User):
 class UserMeResponse(BaseModel):
     id: int
     email: str
-    token: Optional[str] = None
     
     class Config:
         from_attributes = True

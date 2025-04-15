@@ -7,4 +7,5 @@ with open(r"C:\Users\nasty\Practicum_2kurs\ImageBinarization\random.jpg", "rb") 
     encoded_image = base64.b64encode(image_file.read()).decode("utf-8")
 
 json_data = json.dumps(encoded_image)
-print(json_data) 
+with open(r'C:\Users\nasty\Practicum_2kurs\ImageBinarization\base_64_img.txt', 'w') as f:
+    f.write(json_data)
